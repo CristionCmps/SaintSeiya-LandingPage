@@ -59,6 +59,7 @@ nav a {
     text-decoration: none;
     line-height: 40px;
     font-size: 21px;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -70,4 +71,70 @@ nav a:hover {
 .mobile-menu {
     display: none;
 }
+
+.icon-line__menu {
+    position: relative;
+    background-color:var(--yellow);
+    display: block;
+    width: 30px;
+    height: 3px;
+    z-index: 1;
+    border: 2px solid var(--yellow);
+    border-radius: 5px;
+}
+
+.icon__menu--mobile {
+    position: absolute;
+    z-index: 99;
+    right: 0;
+    top: -22px;
+    right: 25px;
+}
+
+.icon__menu--mobile::after,
+.icon__menu--mobile::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 2px solid var(--yellow);
+    border-radius: 5px;
+}
+
+.container__menu--mobile {
+    z-index: 99;
+    padding: 15px;
+    display: none;
+    width: 100%;
+    height: 250px;
+    text-align: center;
+}
+
+.container__menu--mobile.active {
+    position: absolute;
+    z-index: 99;
+    background-color: black;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+}
+
+@media (max-width: 1153px) {
+    .mobile-menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 59px;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
+
 /* ========================== First Section ============================ */
