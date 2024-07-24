@@ -74,7 +74,7 @@ nav a:hover {
 
 .icon-line__menu {
     position: relative;
-    background-color:var(--yellow);
+    background-color: var(--yellow);
     display: block;
     width: 30px;
     height: 3px;
@@ -138,3 +138,77 @@ nav a:hover {
 
 
 /* ========================== First Section ============================ */
+/* .item {
+    height: 980px;
+}
+
+.owl-nav.disabled {
+    display: block !important;
+}
+
+.owl-nav button {
+    position: absolute;
+    z-index: 3 !important;
+    background-repeat: no-repeat !important;
+    background-size: 25px 25px !important;
+    background-color: var(--yellow);
+    border-radius: 5px;
+    bottom: 27rem;
+    margin: 0 !important;
+}
+
+.owl-nav button.owl-next {
+    width: 40px;
+    height: 40px;
+    background-color: var(--orange) !important;
+    position: absolute;
+    border-radius: 50px !important;
+    right: 80px;
+    top: 42%;
+    background-image: url('../images/seta-direita\ \(1\).png') !important;
+    background-repeat: no-repeat !important;
+    background-size: 20px 20px !important;
+    background-position: center !important;
+}
+
+.owl-nav button.owl-prev {
+    width: 40px;
+    height: 40px;
+    background-color: var(--orange) !important;
+    background-image: url('../images/seta-esquerda\ \(1\).png') !important;
+    background-position: center !important;
+    background-size: 20px 20px !important;
+    background-repeat: no-repeat !important;
+    border-radius: 50px !important;
+    position: absolute;
+    left: 80px;
+    top: 42%;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border: 1px solid var(--black) !important;
+    background-color: var(--gray);
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background-color: var(--black);
+}
+
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: var(--black);
+} */
+
+/* ========================== Second Section ============================ */
+.c-accordion {
+    background-color: var(--black);
+    width: 100%;
+}
+
+.content-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
