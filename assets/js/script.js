@@ -7,20 +7,15 @@ $(document).ready(function () {
 
 let owl = $(".owl-carousel");
 owl.owlCarousel({
-    center: true,
+    // center: false,
     loop: true,
-    margin: 10,
-    nav: true,
-    autoWidth: true,
-    responsive: {
-        0: {
-            items: 1,
+    margin: 0,
+    nav: false,
+    dots: false,
+    // autoWidth: true,
+    responsive:{
+        0:{
+            items:1
         },
-        600: {
-            items: 3,
-        },
-        1000: {
-            items: 5,
-        },
-    },
+    }
 });
