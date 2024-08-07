@@ -182,11 +182,11 @@ nav a:hover {
     cursor: pointer;
 }
 
-.owl-nav.disabled {
+.c-emphasis_carousel .owl-nav.disabled {
     display: block !important;
 }
 
-.owl-nav button.owl-next {
+.c-emphasis_carousel .owl-nav button.owl-next {
     width: 1.875rem;
     height: 1.875rem;
     background-color: var(--yellow) !important;
@@ -198,11 +198,11 @@ nav a:hover {
     background-size: 20px 20px !important;
 }
 
-.owl-theme .owl-nav {
+.c-emphasis_carousel .owl-theme .owl-nav {
     margin-top: 0 !important;
 }
 
-.owl-nav button.owl-prev {
+.c-emphasis_carousel .owl-nav button.owl-prev {
     display: none !important;
 }
 
@@ -292,3 +292,50 @@ button.accordion-button {
     align-items: center;
     width: 100%;
 }
+
+.c-carousel__text p {
+    position: relative;
+    color: red;
+    text-align: start;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+
+.personagens__carrosel {
+    display: flex;
+}
+
+.personagens__carrosel .owl-stage {
+    display: flex;
+    gap: 10px;
+}
+
+.item img {
+    width: 190px !important;
+    height: 380px;
+}
+
+/* ================================ FANCYBOX =============================== */
+.c-gallery {
+    background-color: var(--black);
+}
+
+.c-form {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.register p {
+    color: var(--white3);
+}
+
+.input-box input{
+    background-color: var(--purple);
+}
+
+
+
