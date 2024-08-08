@@ -247,6 +247,7 @@ nav a:hover {
 
 .title h2 {
     color: var(--yellow);
+    font-size: 36px;
     height: 44px;
     font-weight: 600;
     margin-top: 5rem;
@@ -284,6 +285,7 @@ button.accordion-button {
     border-radius: 5px !important;
 }
 
+/* ================================ Carousel Cavaleiros =============================== */
 .c-carousel {
     background-color: var(--black);
     display: flex;
@@ -295,7 +297,8 @@ button.accordion-button {
 
 .c-carousel__text p {
     position: relative;
-    color: red;
+    font-size: 21px;
+    color: var(--white);
     text-align: start;
     letter-spacing: 0px;
     opacity: 1;
@@ -316,10 +319,25 @@ button.accordion-button {
 }
 
 /* ================================ FANCYBOX =============================== */
-.c-gallery {
+.c-home {
     background-color: var(--black);
 }
 
+.home__carousel img {
+    width: 820px;
+    height: 460px;
+}
+
+.color_alternative {
+    color: var(--yellow);
+}
+
+.home__text p {
+    color: var(--white);
+}
+
+
+/* ================================ FORM =============================== */
 .c-form {
     background-color: var(--black);
     display: flex;
@@ -328,7 +346,6 @@ button.accordion-button {
     align-items: center;
     width: 100%;
 }
-
 .register p {
     color: var(--white3);
 }
