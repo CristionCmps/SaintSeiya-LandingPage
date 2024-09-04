@@ -50,12 +50,12 @@
                             </ul>
                         </nav>
                         <div class="mobile-menu">
-                            <div class="icon__menu--mobile">
+                            <!-- <div class="icon__menu--mobile">
                                 <span class="icon-line__menu"></span>
-                            </div>
+                            </div> -->
                             <div class="container__menu--mobile">
                                 <nav id="nav-mobile">
-                                    <ul class="nav-bar">
+                                    <ul class="nav-bar" id="menuList">
                                         <li class="nav-item">
                                             <a href="#">Cavaleiros De Atena</a>
                                         </li>
@@ -72,6 +72,9 @@
                                             <a href="#">Seja um Cavaleiro!</a>
                                         </li>
                                     </ul>
+                                    <div class="menu-icon">
+                                        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+                                    </div>
                                 </nav>
                             </div>
                         </div>
@@ -554,8 +557,9 @@
                                     <input type="text" placeholder="" id="treinamento" required>
                                 </div>
                             </div>
-                            <div class="c-form_button"> 
-                                <button type="button" class="btn__vermais btn__vermais--hover-orange">Registre-se</button>
+                            <div class="c-form_button">
+                                <button type="button"
+                                    class="btn__vermais btn__vermais--hover-orange">Registre-se</button>
                             </div>
                         </div>
                     </form>
@@ -590,6 +594,20 @@
 
     </main>
 
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu() {
+            if (menuList.style.maxHeight = "0px") {
+                menuList.maxHeight = "18.75rem"
+            }
+            else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

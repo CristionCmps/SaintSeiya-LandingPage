@@ -49,6 +49,7 @@ nav {
 }
 
 nav ul {
+    list-style-type: none;
     display: flex;
     gap: 20px;
     list-style: none;
@@ -85,7 +86,16 @@ nav a:hover {
     display: none;
 }
 
-.icon-line__menu {
+.menu-icon {
+    display: none;
+}
+
+.menu-icon i {
+    color: var(--yellow);
+    font-size: 30px;
+}
+
+/* .icon-line__menu {
     position: relative;
     background-color: var(--yellow);
     display: block;
@@ -119,8 +129,8 @@ nav a:hover {
     margin-bottom: .125rem;
     border: .125rem solid var(--yellow);
     border-radius: .3125rem;
-}
-
+} */
+/* 
 .container__menu--mobile {
     z-index: 99;
     padding: 15.008px;
@@ -139,15 +149,42 @@ nav a:hover {
     display: block;
     width: 100%;
     text-align: center;
+} */
+
+@media (max-width: 1024px) {
+    nav ul {
+        position: absolute;
+        top: 7.375rem;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: var(--purple);
+        gap: 0;
+        overflow: hidden;
+    }
+
+    nav ul li {
+        padding: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
 }
 
-@media (min-width: 46.5rem) and (max-width: 72.0625rem) {
+/* @media (min-width: 46.5rem) and (max-width: 72.0625rem) {
     .mobile-menu {
         display: block;
         width: 100%;
         top: 59.008px;
     }
-
+    
     #menu {
         display: none;
     }
@@ -198,7 +235,7 @@ nav a:hover {
     .form__settings {
         margin-left: 4.0625rem;
     }
-}
+} */
 
 /* ========================== First Section ============================ */
 .c-emphasis__item {
@@ -457,7 +494,7 @@ button.accordion-button {
 }
 
 .c-form_button {
-    margin-left: 5rem; 
+    margin-left: 5rem;
 }
 
 .form button {
