@@ -1,9 +1,9 @@
-// $(document).ready(function () {
-//     // ABRIR BOX MENU MOBILE
-//     $('.mobile-menu').click(function () {
-//         $('.container__menu--mobile').toggleClass('active');
-//     });
-// });
+$(document).ready(function () {
+    // ABRIR BOX MENU MOBILE
+    $('.mobile-menu').click(function () {
+        $('.container__menu--mobile').toggleClass('active');
+    });
+});
 
 let owl = $(".emphasis_carousel");
 owl.owlCarousel({
